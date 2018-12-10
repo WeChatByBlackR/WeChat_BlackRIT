@@ -1,12 +1,5 @@
-[![码云Gitee](https://gitee.com/binary/weixin-java-mp-demo-springboot/badge/star.svg?theme=blue)](https://gitee.com/binary/weixin-java-mp-demo-springboot)
-[![Github](http://github-svg-buttons.herokuapp.com/star.svg?user=binarywang&repo=weixin-java-mp-demo-springboot&style=flat&background=1081C1)](https://github.com/binarywang/weixin-java-mp-demo-springboot)
-[![Build Status](https://travis-ci.org/binarywang/weixin-java-mp-demo-springboot.svg?branch=master)](https://travis-ci.org/binarywang/weixin-java-mp-demo-springboot)
------------------------
-
 ### 本Demo基于Spring Boot构建，实现微信公众号后端开发功能。
-### 本项目为weixin-java-tools的Demo演示程序，更多Demo请[查阅此处](https://github.com/Wechat-Group/weixin-java-tools/blob/master/demo.md)。
-#### 如有问题请[【在此提问】](https://github.com/binarywang/weixin-java-mp-demo-springboot/issues)，谢谢配合。
-
+### 本项目为weixin-java-tools的Demo演示程序
 ## 使用步骤：
 1. 请注意，本demo为简化代码编译时加入了lombok支持，如果不了解lombok的话，请先学习下相关知识，比如可以阅读[此文章](https://mp.weixin.qq.com/s/cUc-bUcprycADfNepnSwZQ)；
 1. 配置：复制 `/src/main/resources/application.yml.template` 或修改其扩展名生成 `application.yml` 文件，根据自己需要填写相关配置（需要注意的是：yml文件内的属性冒号后面的文字之前需要加空格，可参考已有配置，否则属性会设置不成功）；
