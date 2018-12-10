@@ -6,7 +6,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 /**
- * @author Binary Wang(https://github.com/binarywang)
+ * @author BlackR
  */
 @SpringBootApplication
 public class WxMpDemoApplication extends SpringBootServletInitializer {
