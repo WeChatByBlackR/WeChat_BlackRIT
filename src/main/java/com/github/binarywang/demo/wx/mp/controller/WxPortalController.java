@@ -20,17 +20,17 @@ import me.chanjar.weixin.mp.bean.message.WxMpXmlOutMessage;
  * @author Binary Wang(https://github.com/binarywang)
  */
 @RestController
-@RequestMapping("/wx/portal/{appid}")
+@RequestMapping("/firstjoin/{appid}")
 public class WxPortalController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @GetMapping(produces = "text/plain;charset=utf-8")
+    @GetMapping(produces = "application/xml;charset=utf-8")
     public String authGet(@PathVariable String appid,
                           @RequestParam(name = "signature", required = false) String signature,
                           @RequestParam(name = "timestamp", required = false) String timestamp,
                           @RequestParam(name = "nonce", required = false) String nonce,
                           @RequestParam(name = "echostr", required = false) String echostr) {
-
+        System.out.printf("进来了");
         this.logger.info("\n接收到来自微信服务器的认证消息：[{}, {}, {}, {}]", signature,
             timestamp, nonce, echostr);
         if (StringUtils.isAnyBlank(signature, timestamp, nonce, echostr)) {
@@ -45,7 +45,7 @@ public class WxPortalController {
         if (wxService.checkSignature(timestamp, nonce, signature)) {
             return echostr;
         }
-
+        System.out.printf("非法了");
         return "非法请求";
     }
 
