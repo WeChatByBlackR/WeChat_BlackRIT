@@ -5,5 +5,5 @@ import com.github.binarywang.demo.wx.mp.entity.HaloLogs;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
-public interface HaloLogsService extends BaseMapper<HaloLogs> {
+public interface HaloLogsMapper extends BaseMapper<HaloLogs> {
 }

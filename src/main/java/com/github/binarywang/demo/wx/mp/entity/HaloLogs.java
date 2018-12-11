@@ -5,6 +5,8 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.util.Date;
+
 @TableName("halo_logs")
 @Data
 public class HaloLogs {
@@ -19,4 +21,7 @@ public class HaloLogs {
 
     @TableField("log_title")
     private String logTitle;
+
+    @TableField("log_created")
+    private Date logCreated;
 }
